@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий рай</title>
+    <style>
+        /* Исправленные стили из вашего файла css.pdf */
+        body {
+            margin: 0px;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            background: #eaeaea;
+            font-size: 16px;
+        }
+
+        .section-main {
+            background: #556b2f;
+            padding-top: 40px;
+            padding-bottom: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section-main-logo {
+            width: 160px;
+        }
+
+        .section-main-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-family: 'Lora', serif;
+            font-size: 55px;
+            font-weight: 700;
+        }
+
+        .section-main-subtitle {
+            margin-bottom: 40px;
+            color: #fff;
+            font-family: 'Lora', serif;
+            font-size: 22px;
+        }
+
+        .section-main-button {
+            background: #8fbc8f;
+            border-radius: 25px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 12px 30px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .second-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px;
+        }
+
+        .second-section-img {
+            width: 500px;
+            border: 5px solid #556b2f;
+            border-radius: 20px;
+        }
+
+        .second-section-info {
+            margin-left: 30px;
+            max-width: 600px;
+        }
+
+        .section-subtitle {
+            margin-top: 0px;
+            margin-bottom: 10px;
+            color: #8fbc8f;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .section-title {
+            margin-top: 0px;
+            margin-bottom: 40px;
+            color: #556b2f;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .second-section-text {
+            margin: 30px 0;
+            color: #666;
+            font-size: 18px;
+        }
+
+        .third-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f5f5f5;
+            padding: 100px 0;
+        }
+
+        .third-section-books {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .third-section-book {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .book-img { height: 200px; }
+
+        .book-title {
+            margin-top: 10px;
+            color: #556b2f;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .book-price {
+            color: #8fbc8f;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #2f4f4f;
+            padding: 100px 0;
+            color: white;
+        }
+
+        .form-input {
+            width: 400px;
+            height: 40px;
+            margin-bottom: 10px;
+            padding: 0 10px;
+            background-color: #2f4f4f;
+            color: #ffffff;
+            border: 1px solid #ffffff;
+            border-radius: 8px;
+        }
+
+        .footer-button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #8fbc8f;
+            color: #ffffff;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="section-main">
+        <img class="section-main-logo" src="https://abrakadabra.fun/uploads/posts/2021-12/1639967417_3-abrakadabra-fun-p-logotip-kniga-na-prozrachnom-fone-3.png">
+        <h1 class="section-main-title">Книжковий рай</h1>
+        <h2 class="section-main-subtitle">Відкрий для себе наступну чудову книгу</h2>
+        <a class="section-main-button" href="https://bi.ua/rus/product/kniga-malenkiy-princ-antuan-de-sent-ekzyuperi-2.html">Дізнатися більше</a>
+    </main>
+
+    <section class="second-section">
+        <img class="second-section-img" src="https://imglife.pravda.com.ua/life/images/doc/4/c/50786/4c1bf77-jag-cz-depositphotos1320.jpg">
+        <div class="second-section-info">
+            <h3 class="section-subtitle">ЛАСКАВО ПРОСИМО ДО КНИЖКОВОГО РАЮ</h3>
+            <h3 class="section-title">Про нашу бібліотеку</h3>
+            <p class="second-section-text">Ласкаво просимо до нашої бібліотеки, де ви знайдете широкий вибір книг для будь-якого віку та вподобань.</p>
+            <p><strong>Іван Іваненко</strong> — засновник Книжкового Раю</p>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <h3 class="section-subtitle">РЕКОМЕНДОВАНІ КНИГИ</h3>
+        <h3 class="section-title">Наша колекція</h3>
+        <div class="third-section-books">
+            <div class="third-section-book">
+                <img class="book-img" src="https://bi.ua/uploaded-images/products/size_650/604993_1.jpg">
+                <h4 class="book-title">Маленький принц</h4>
+                <p>Антуан де Сент Екзюпері</p>
+                <p class="book-price">150 грн</p>
+            </div>
+            <div class="third-section-book">
+                <img class="book-img" src="https://content2.rozetka.com.ua/goods/images/big/623455076.jpg">
+                <h4 class="book-title">Поліанна</h4>
+                <p>Елеонор Портер</p>
+                <p class="book-price">150 грн</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3>Приєднуйтесь до нашої спільноти</h3>
+        <form class="footer-form">
+            <input type="text" class="form-input" placeholder="Ім'я">
+            <input type="email" class="form-input" placeholder="Електронна пошта">
+            <button type="submit" class="footer-button">Підписатися</button>
+        </form>
+    </footer>
+
+</body>
+</html>
