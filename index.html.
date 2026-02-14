@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий рай</title>
+    <style>
+        /* CSS з вашого файлу з виправленням структури */
+        body {
+            margin: 0px; [cite: 1]
+            font-family: 'Roboto', sans-serif; [cite: 1]
+            color: #333; [cite: 1]
+            background: #eaeaea; [cite: 1]
+            font-size: 16px; [cite: 1]
+        }
+
+        .section-main {
+            background: #556b2f; [cite: 1]
+            padding-top: 40px; [cite: 1]
+            padding-bottom: 120px; [cite: 1]
+            display: flex; [cite: 2]
+            flex-direction: column; [cite: 2]
+            justify-content: center; [cite: 2]
+            align-items: center; [cite: 2]
+        }
+
+        .section-main-logo {
+            width: 160px; [cite: 2]
+        }
+
+        .section-main-title {
+            margin-top: 40px; [cite: 2]
+            margin-bottom: 20px; [cite: 2]
+            color: #fff; [cite: 2]
+            font-family: 'Lora', serif; [cite: 2]
+            font-size: 55px; [cite: 2]
+            font-weight: 700; [cite: 3]
+        }
+
+        .section-main-subtitle {
+            margin-bottom: 40px; [cite: 3]
+            color: #fff; [cite: 3]
+            font-family: 'Lora', serif; [cite: 3]
+            font-size: 22px; [cite: 3]
+        }
+
+        .section-main-button {
+            background: #8fbc8f; [cite: 3]
+            border-radius: 25px; [cite: 3]
+            color: #fff; [cite: 3]
+            font-weight: bold; [cite: 3]
+            text-transform: uppercase; [cite: 3]
+            padding: 12px 30px; [cite: 4]
+            cursor: pointer; [cite: 4]
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .second-section {
+            display: flex; [cite: 5]
+            justify-content: space-between; [cite: 5]
+            align-items: center; [cite: 5]
+            padding-top: 100px; [cite: 5]
+            padding-bottom: 100px; [cite: 5]
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .second-section-img {
+            width: 500px; [cite: 5]
+            border: 5px solid #556b2f; [cite: 5]
+            border-radius: 20px; [cite: 5]
+        }
+
+        .second-section-info {
+            margin-left: 30px; [cite: 5]
+            max-width: 600px; [cite: 6]
+        }
+
+        .section-subtitle {
+            margin-top: 0px; [cite: 6]
+            margin-bottom: 10px; [cite: 6]
+            color: #8fbc8f; [cite: 6]
+            font-size: 18px; [cite: 6]
+            font-weight: bold; [cite: 6]
+            text-transform: uppercase; [cite: 6]
+        }
+
+        .section-title {
+            margin-top: 0px; [cite: 6]
+            margin-bottom: 40px; [cite: 6]
+            color: #556b2f; [cite: 6]
+            font-size: 32px; [cite: 7]
+            font-weight: bold; [cite: 7]
+            text-transform: capitalize; [cite: 7]
+        }
+
+        .second-section-text {
+            margin: 30px 0; [cite: 7]
+            color: #666; [cite: 7]
+            font-size: 18px; [cite: 7]
+        }
+
+        .second-section-name {
+            color: #556b2f; [cite: 7]
+            text-transform: capitalize; [cite: 7]
+        }
+
+        .second-section-name2 {
+            color: #8fbc8f; [cite: 7]
+            font-weight: bold; [cite: 7]
+            text-transform: uppercase; [cite: 7]
+        }
+
+        .third-section {
+            display: flex; [cite: 8]
+            flex-direction: column; [cite: 9]
+            align-items: center; [cite: 9]
+            background-color: #f5f5f5; [cite: 9]
+            padding-top: 100px; [cite: 9]
+            padding-bottom: 100px; [cite: 9]
+        }
+
+        .third-section-books {
+            display: flex; [cite: 9]
+            justify-content: center; [cite: 9]
+            align-items: center; [cite: 9]
+            margin-top: 50px; [cite: 9]
+            flex-wrap: wrap; [cite: 9]
+        }
+
+        .third-section-book {
+            display: flex; [cite: 10]
+            flex-direction: column; [cite: 10]
+            align-items: center; [cite: 10]
+            margin: 10px 20px; [cite: 10]
+        }
+
+        .book-img {
+            height: 200px; [cite: 10]
+        }
+
+        .book-title {
+            margin-top: 10px; [cite: 10]
+            margin-bottom: 5px; [cite: 10]
+            color: #556b2f; [cite: 10]
+            font-size: 22px; [cite: 10]
+            font-weight: bold; [cite: 11]
+        }
+
+        .book-author {
+            margin: 2px 0; [cite: 11]
+            color: #666; [cite: 11]
+        }
+
+        .book-price {
+            margin: 0; [cite: 11]
+            color: #8fbc8f; [cite: 11]
+            font-size: 20px; [cite: 11]
+            font-weight: bold; [cite: 11]
+        }
+
+        .footer {
+            display: flex; [cite: 11]
+            flex-direction: column; [cite: 11]
+            align-items: center; [cite: 12]
+            background-color: #2f4f4f; [cite: 12]
+            padding-top: 100px; [cite: 12]
+            padding-bottom: 100px; [cite: 12]
+        }
+
+        .footer-text {
+            width: 600px; [cite: 13]
+            text-align: center; [cite: 13]
+            margin-top: 0; [cite: 13]
+            margin-bottom: 20px; [cite: 13]
+            color: #8fbc8f; [cite: 13]
+            font-size: 20px; [cite: 13]
+        }
+
+        .footer-title, .footer-text-main {
+            color: #ffffff; [cite: 13]
+        }
+
+        .footer-form {
+            display: flex; [cite: 13]
+            flex-direction: column; [cite: 13]
+            align-items: center; [cite: 14]
+        }
+
+        .form-title {
+            margin-top: 20px; [cite: 14]
+            margin-bottom: 10px; [cite: 14]
+            text-align: center; [cite: 14]
+            color: #ffffff; [cite: 14]
+            font-weight: bold; [cite: 14]
+            text-transform: uppercase; [cite: 14]
+        }
+
+        .form-input {
+            width: 400px; [cite: 14]
+            height: 40px; [cite: 14]
+            margin-bottom: 10px; [cite: 14]
+            padding: 0 10px; [cite: 15]
+            background-color: #2f4f4f; [cite: 15]
+            color: #ffffff; [cite: 15]
+            border: 1px solid #ffffff; [cite: 15]
+            border-radius: 8px; [cite: 15]
+        }
+
+        .footer-button {
+            margin-top: 30px; [cite: 15]
+            padding: 10px 20px; [cite: 15]
+            background-color: #8fbc8f; [cite: 15]
+            color: #ffffff; [cite: 16]
+            font-weight: bold; [cite: 16]
+            border: none; [cite: 16]
+            border-radius: 25px; [cite: 16]
+            cursor: pointer; [cite: 16]
+        }
+    </style>
+</head>
+<body>
+
+    <main class="section-main">
+        <img class="section-main-logo" src="https://abrakadabra.fun/uploads/posts/2021-12/1639967417_3-abrakadabra-fun-p-logotip-kniga-na-prozrachnom-fone-3.png" alt="Logo">
+        <h1 class="section-main-title">Книжковий рай</h1>
+        <h2 class="section-main-subtitle">Відкрий для себе наступну чудову книгу</h2>
+        <a class="section-main-button" href="#">Дізнатися більше</a>
+    </main>
+
+    <section class="second-section">
+        <img class="second-section-img" src="https://imglife.pravda.com.ua/life/images/doc/4/c/50786/4c1bf77-jag-cz-depositphotos1320.jpg" alt="Library">
+        <div class="second-section-info">
+            <h3 class="section-subtitle">Ласкаво просимо до книжкового раю</h3>
+            <h3 class="section-title">Про нашу бібліотеку</h3>
+            <p class="second-section-text">Ласкаво просимо до нашої бібліотеки, де ви знайдете широкий вибір книг для будь-якого віку та вподобань. Приходьте та насолоджуйтесь читанням у затишній атмосфері.</p>
+            <p class="second-section-name">
+                <span class="second-section-name2">Іван Іваненко</span> — засновник Книжкового Раю
+            </p>
+        </div>
+    </section>
+
+    <section class="third-section">
+        <h3 class="section-subtitle">Рекомендовані книги</h3>
+        <h3 class="section-title">Наша колекція</h3>
+        <div class="third-section-books">
+            <div class="third-section-book">
+                <img class="book-img" src="https://bi.ua/uploaded-images/products/size_650/604993_1.jpg" alt="Book 1">
+                <h4 class="book-title">Маленький принц</h4>
+                <p class="book-author">Антуан де Сент Екзюпері</p>
+                <p class="book-price">150 грн</p>
+            </div>
+            <div class="third-section-book">
+                <img class="book-img" src="https://content2.rozetka.com.ua/goods/images/big/623455076.jpg" alt="Book 2">
+                <h4 class="book-title">Поліанна</h4>
+                <p class="book-author">Елеонор Портер</p>
+                <p class="book-price">150 грн</p>
+            </div>
+            <div class="third-section-book">
+                <img class="book-img" src="https://content2.rozetka.com.ua/goods/images/big/487716638.jpg" alt="Book 3">
+                <h4 class="book-title">Кульбабове вино</h4>
+                <p class="book-author">Рей Бредбері</p>
+                <p class="book-price">200 грн</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h3 class="section-title footer-title">Приєднуйтесь до нашої спільноти</h3>
+        <p class="footer-text">
+            <span class="footer-text-main">Підпишіться на нашу розсилку, щоб отримувати останні новини про новинки та ексклюзивні пропозиції.</span><br>
+            Для запитів, будь ласка, зв'яжіться з нами за номером (+380) 123-456-789
+        </p>
+        <form class="footer-form" action="#">
+            <p class="form-title">Ім'я</p>
+            <input type="text" class="form-input" placeholder="Ваше ім'я">
+            <p class="form-title">Електронна пошта</p>
+            <input type="email" class="form-input" placeholder="email@example.com">
+            <p class="form-title">Телефон</p>
+            <input type="tel" class="form-input" placeholder="+380...">
+            <button type="submit" class="footer-button">Підписатися</button>
+        </form>
+    </footer>
+
+</body>
+</html>
